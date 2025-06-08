@@ -1,0 +1,13 @@
+include *.in
+include *.rst
+include *.txt
+include LICENSE
+include Makefile
+include setup.py
+include distribute_setup.py
+include versioneer.py
+
+global-exclude *.pyd
+global-exclude *.pyc
+global-exclude .git*
+global-exclude .DS_Store
