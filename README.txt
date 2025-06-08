@@ -1,7 +1,17 @@
 # README.txt
 
+Author: Rebecca Key
+Adapted from Bryndan Durham
+
+University of Florida
+Department of Biology
+Durham Lab
+
 ## Overview
-This folder contains a series of bash scripts designed to automate phylogenetic placement of metagenomic reads using pplacer. The pipeline consists of multiple steps, beginning with building reference packages, aligning reads, running pplacer, and summarizing outputs.
+This folder contains a series of bash scripts designed to automate phylogenetic placement of short-read metatranscripts using pplacer. The pipeline consists of multiple steps, beginning with building reference packages, aligning reads, running pplacer, and summarizing outputs. This is catered to perform using parallel computation, where we provide a list of genes to reun simultaneously, rather than linearly. Plus, we are operating in the HiperGator Cluster. 
+
+## Purpose
+The goal is to identify transcripts in both NS (non-selected) and PA (particle-associated) seawater samples that align to a gene of interest (e.g., an enzyme-coding gene). We then pull annotation information to determine which microbial organisms contain the query gene. This generates a gene dendrogram, and the number of occurrences across sample datasets is tallied using the dendrogram as a reference framework.
 
 ---
 
@@ -51,6 +61,6 @@ This folder contains a series of bash scripts designed to automate phylogenetic 
 ## Contact
 For questions or assistance, please contact:  
 Rebecca Key, Ph.D.  
-rebeccakey@ufl.edu  
+rkeyMicrobe@proton.me
 
 ---
